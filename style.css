@@ -1,0 +1,554 @@
+/*home*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 20px;
+}
+.nav ul li a{
+   text-decoration: none;
+   background-color: rgb(236, 236, 116);
+   color: black;
+   padding: 10px 20px;
+   margin: 5px;
+   font-weight: 600;
+   transition: 0.3s;
+   border-radius: 10px;
+}
+
+.nav button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(218, 218, 104);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.nav ul li a:hover, .nav button:hover{
+    background-color: aqua;
+    transform:translateY(-2px);
+    
+}
+.hero{
+    background-image:url(./photo/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: inherit;
+}
+
+.welcome{
+    color: white;
+    padding: 10px;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+.para h1{
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    margin-left: 430px;  
+}
+
+.para p{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 500px;
+    margin-right: 50px;
+    background-color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.explore{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(218, 218, 104);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+}
+.explore:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
+
+/* destination */
+
+.destination{
+   padding: 15px 60px;
+   color: #77bef8;
+   background: #fafafa;
+}
+.destination span{
+    color: #000;
+    font-weight: 500;
+}
+.des1{
+    height: 480px;
+    background-image: url(./photo/des\ bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.des1 h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.des1 p{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.card{
+    padding: 20px;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+
+.collection:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.collection img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.collection h3{
+    font-size: 20px;
+    margin: 10px ;
+}
+.collection button{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.collection button:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
+.desbutton{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.desbutton:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
+
+/* package */
+
+.package{
+    height: 480px;
+    background-image: url(./photo/package\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.package h2{
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.package p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.package-list{
+    padding: 20px;
+    text-align: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.packs{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+.packs:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+.packs img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.packs h3{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 10px;
+}
+.packs p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+.packs button{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transfome 0.3s;
+}
+.packs button:hover{
+    background-color: aqua;
+    transform: translateY(-5px);
+
+}
+.packbtu{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.packbtu:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
+
+/* contact */
+
+.contact{
+    height: 480px;
+    background-image: url(./photo/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact h2{
+    color:aqua;   
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    background-color:whitesmoke;
+    border-radius: 10px;
+    opacity: 0.8;    
+}
+
+.contact p{
+    color: #ffff;
+    font-size: 30px;
+}
+.contact-info h1{
+    padding: 20px;
+    text-align: center;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.form-container{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px;
+    text-align: left;
+    padding: 30px;
+}
+.form-container h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form-container label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.form-container input, .form-container textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form-container button:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
+.info{
+    background-color: whitesmoke;
+    display: fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px;
+    text-align: left;
+    padding: 30px;
+}
+.info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.info p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.info iframe{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* * =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px){
+
+.nav{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome{
+    font-size: 50px;
+    text-align: center;
+}
+
+.para h1{
+    margin-left: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.para p{
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+    width: 80%;
+}
+
+.explore{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* destination */
+.grid{
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* packages */
+.grids{
+    grid-template-columns: 1fr;
+}
+
+.packbtu{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* contact */
+.grid1{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+.hero{
+    height: auto;
+    padding: 60px 20px;
+}
+
+.welcome{
+    font-size: 40px;
+}
+
+.para h1{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.para p{
+    font-size: 18px;
+    width: 100%;
+}
+
+.explore{
+    font-size: 18px;
+}
+
+/* destination cards */
+.grid{
+    grid-template-columns: 1fr;
+}
+
+/* package section */
+.package h2{
+    font-size: 40px;
+}
+
+.packs h3{
+    font-size: 30px;
+}
+
+/* contact form */
+.form-container,
+.info{
+    width: 90%;
+}
+
+.contact h2{
+    font-size: 40px;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+.nav ul li a{
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.nav button{
+    font-size: 16px;
+}
+
+.welcome{
+    font-size: 30px;
+}
+
+.package h2{
+    font-size: 30px;
+}
+
+.contact h2{
+    font-size: 30px;
+}
+
+} 
