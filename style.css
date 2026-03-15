@@ -1,15 +1,16 @@
 /*home*/
 
-*{
-    margin: 0px;
-    padding: 0px;
+    *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 20px; 
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
@@ -373,7 +374,7 @@
 }
 .info{
     background-color: whitesmoke;
-    display: fixed;
+    display: block;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -400,155 +401,221 @@
     border-radius: 10px;
 }
 
-/* * =========================
-   RESPONSIVE DESIGN
-========================= */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px 20px;
+    }
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav ul li {
+        margin: 10px 0;
+    }
+    .nav button {
+        margin: 10px 0 0;
+        
+    }
 
-/* Tablet */
-@media (max-width: 1024px){
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+    .welcome {
+        font-size: 55px;
+        text-align: center;
+    }
 
-.nav{
-    flex-direction: column;
-    gap: 10px;
+    .para h1 {
+        font-size: 40px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        max-width: 720px;
+    }
+    .para p {
+        font-size: 22px;
+        margin: 20px auto;
+        max-width: 720px;
+    }
+    .explore {
+        margin: 20px auto;
+        margin-left: 90px;
+    }
+
+    .des1 {
+        height: auto;
+        padding: 80px 20px;
+    }
+    .des1 h1 {
+        font-size: 40px;
+    }
+    .des1 p {
+        font-size: 22px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grids {
+        grid-template-columns: 1fr;
+    }
+
+    .package {
+        height: auto;
+        padding: 80px 20px;
+    }
+    .package h2 {
+        font-size: 50px;
+    }
+    .package p {
+        font-size: 18px;
+    }
+    .packs h3 {
+        font-size: 32px;
+    }
+    .packs p {
+        font-size: 18px;
+    }
+
+    .packbtu {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .contact {
+        height: auto;
+        padding: 80px 20px;
+    }
+    .contact h2 {
+        font-size: 50px;
+    }
+    .contact p {
+        font-size: 22px;
+    }
+
+    .grid1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .form-container,
+    .info {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .info iframe {
+        height: 250px;
+    }
 }
 
-.nav ul{
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .nav ul li {
+        margin: 8px 0;
+    }
+    .nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+    .nav button {
+        width: 100%;
+        margin: 12px 0 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .grids {
+        grid-template-columns: 1fr;
+    }
+
+    .package {
+        padding: 60px 20px;
+    }
+
+    .des1 {
+        padding: 60px 20px;
+    }
+
+    .package h2 {
+        font-size: 48px;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .form-container,
+    .info {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .info iframe {
+        height: 220px;
+    }
 }
 
-.welcome{
-    font-size: 50px;
-    text-align: center;
+@media (max-width: 480px) {
+    .nav {
+        padding: 12px 16px;
+    }
+
+    .welcome {
+        font-size: 38px;
+    }
+    .para h1 {
+        font-size: 28px;
+        padding: 20px 15px;
+    }
+    .para p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .nav ul li a,
+    .nav button {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    .collection img,
+    .packs img {
+        height: 140px;
+    }
+    .collection h3,
+    .packs h3 {
+        font-size: 17px;
+    }
+    .collection button,
+    .packs button,
+    .desbutton,
+    .packbtu {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+    .form-container h3,
+    .info h3 {
+        font-size: 22px;
+    }
+    .package h2 {
+        font-size: 42px;
+    }
+    .contact h2 {
+        font-size: 46px;
+    }
 }
-
-.para h1{
-    margin-left: 0;
-    text-align: center;
-    font-size: 40px;
-}
-
-.para p{
-    margin: auto;
-    font-size: 22px;
-    text-align: center;
-    width: 80%;
-}
-
-.explore{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/* destination */
-.grid{
-    grid-template-columns: repeat(2,1fr);
-}
-
-/* packages */
-.grids{
-    grid-template-columns: 1fr;
-}
-
-.packbtu{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/* contact */
-.grid1{
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px){
-
-.hero{
-    height: auto;
-    padding: 60px 20px;
-}
-
-.welcome{
-    font-size: 40px;
-}
-
-.para h1{
-    font-size: 30px;
-    padding: 20px;
-}
-
-.para p{
-    font-size: 18px;
-    width: 100%;
-}
-
-.explore{
-    font-size: 18px;
-}
-
-/* destination cards */
-.grid{
-    grid-template-columns: 1fr;
-}
-
-/* package section */
-.package h2{
-    font-size: 40px;
-}
-
-.packs h3{
-    font-size: 30px;
-}
-
-/* contact form */
-.form-container,
-.info{
-    width: 90%;
-}
-
-.contact h2{
-    font-size: 40px;
-}
-
-.contact p{
-    font-size: 20px;
-}
-
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 480px){
-
-.nav ul li a{
-    padding: 8px 12px;
-    font-size: 14px;
-}
-
-.nav button{
-    font-size: 16px;
-}
-
-.welcome{
-    font-size: 30px;
-}
-
-.package h2{
-    font-size: 30px;
-}
-
-.contact h2{
-    font-size: 30px;
-}
-
-} 
