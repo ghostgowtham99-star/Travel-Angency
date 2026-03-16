@@ -189,6 +189,10 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
+.collection button a{
+    text-decoration: none;
+    color: black;
+}
 .collection button:hover{
     background-color: aqua;
     transform: scale(1.10);
@@ -296,6 +300,10 @@
     margin-left: 600px;
     margin-bottom: 20px;
     transition: transform 0.3s;
+}
+.packbtu a{
+    text-decoration: none;
+    color: black;
 }
 .packbtu:hover{
     background-color: aqua;
