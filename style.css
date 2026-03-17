@@ -41,6 +41,10 @@
     cursor: pointer;
     margin-right: 20px;
 }
+.nav button a{
+    text-decoration: none;
+    color: black;
+}
 .nav ul li a:hover, .nav button:hover{
     background-color: aqua;
     transform:translateY(-2px);
