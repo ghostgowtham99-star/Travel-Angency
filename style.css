@@ -46,6 +46,9 @@
     transform:translateY(-2px);
     
 }
+#menu-toggle {
+    display: none;
+}
 .hero{
     background-image:url(./photo/background.jpg);
     background-size: cover;
@@ -415,6 +418,23 @@
     object-fit: cover;
     border-radius: 10px;
 }
+.contbtn{
+    background-color: rgb(218, 218, 104);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+.contbtn a{
+    text-decoration: none;
+    color: black;
+}
+.contbtn:hover{
+    background-color: aqua;
+    transform: scale(1.10);
+}
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -427,11 +447,13 @@
     .nav ul {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+       flex-direction: row;
         justify-content: center;
         gap: 10px;
     }
     .nav ul li {
+        display: flex;
+        justify-content: center;
         margin: 10px 0;
     }
     .nav button {
@@ -608,23 +630,36 @@
 
 @media (max-width: 480px) {
     .nav {
-       width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
     }
-    .nav ul {
+    .nav ul{
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-    }
-    
-    .nav ul li a{
-        width: 100%;
-        display: flex;
         justify-content: center;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .nav ul li{
+        margin: 10px 0;
         text-align: center;
     }
+    .nav ul li a{
+        color: rgb(0, 0, 0);
+        padding: 10px 0;
+        display: block;
+    }
+     .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+    
     .welcome {
         font-size: 38px;
     }
